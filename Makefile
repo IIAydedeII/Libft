@@ -1,6 +1,6 @@
 NAME	= libft.a
 
-SRC	= 
+SRC	= ft_isalpha.c
 
 OBJ	= $(SRC:.c=.o)
 

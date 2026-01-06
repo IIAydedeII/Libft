@@ -4,4 +4,6 @@
 # include <unistd.h>
 # include <stdlib.h>
 
+int	ft_isalpha(int c);
+
 #endif
