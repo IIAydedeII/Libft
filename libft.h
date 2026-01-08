@@ -6,7 +6,7 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 13:34:11 by adede             #+#    #+#             */
-/*   Updated: 2026/01/08 12:21:06 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/08 15:07:37 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,7 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+
+size_t	ft_strlcat(char *dst, const char *src, size_t size);
 
 #endif
