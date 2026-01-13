@@ -6,7 +6,7 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 13:34:11 by adede             #+#    #+#             */
-/*   Updated: 2026/01/08 15:07:37 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/13 09:09:41 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,12 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 
-char		*ft_strchr(const char *s, int c);
+char	*ft_strchr(const char *s, int c);
 
-char		*ft_strrchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
+
+int		ft_toupper(int c);
+
+int		ft_tolower(int c);
 
 #endif
