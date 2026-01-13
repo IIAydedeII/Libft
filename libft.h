@@ -6,7 +6,7 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 13:34:11 by adede             #+#    #+#             */
-/*   Updated: 2026/01/13 09:57:00 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/13 10:41:28 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,5 +55,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_toupper(int c);
 
 int		ft_tolower(int c);
+
+int		ft_atoi(const char *nptr);
 
 #endif
