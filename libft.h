@@ -6,7 +6,7 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 13:34:11 by adede             #+#    #+#             */
-/*   Updated: 2026/01/13 16:42:58 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/14 09:09:17 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int		ft_atoi(const char *nptr);
 
 void	ft_bzero(void *s, size_t n);
 
-void	*ft_calloc(size_t *nmemb, size_t size);
+void	*ft_calloc(size_t nmemb, size_t size);
 
 int		ft_isalnum(int c);
 
