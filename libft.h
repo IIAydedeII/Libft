@@ -6,7 +6,7 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 13:34:11 by adede             #+#    #+#             */
-/*   Updated: 2026/01/16 10:14:47 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/16 10:17:47 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,8 @@ void	*ft_memset(void *s, int c, size_t n);
 char	*ft_strchr(const char *s, int c);
 
 char	*ft_strdup(const char *s);
+
+char	*ft_strjoin(const char *s1, const char *s2);
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 
