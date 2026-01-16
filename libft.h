@@ -6,7 +6,7 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 13:34:11 by adede             #+#    #+#             */
-/*   Updated: 2026/01/14 09:36:59 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/16 10:14:47 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,8 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 
 char	*ft_strrchr(const char *s, int c);
+
+char	*ft_substr(const char *s, unsigned int start, size_t len);
 
 int		ft_tolower(int c);
 
