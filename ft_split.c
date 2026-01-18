@@ -69,7 +69,7 @@ char	**ft_split(const char *s, char c)
 				word_length++;
 			split[word_index] = ft_strldup(s, word_length);
 			if (!split[word_index])
-				return (free_split(split, word_index), NULL);
+				return (ft_free_split(split, word_index), NULL);
 			word_index++;
 			s += word_length;
 		}
