@@ -44,7 +44,7 @@ static char	*ft_strldup(const char *s, size_t size)
 	return (dup);
 }
 
-static void	free_split(char **split, size_t i)
+static void	ft_free_split(char **split, size_t i)
 {
 	while (i > 0)
 		free(split[--i]);
