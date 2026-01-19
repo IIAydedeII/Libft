@@ -6,7 +6,7 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 10:54:40 by adede             #+#    #+#             */
-/*   Updated: 2026/01/16 11:52:20 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/19 08:53:49 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static size_t	ft_intlen(int n)
 {
 	size_t	length;
-	
+
 	length = 0;
 	if (n <= 0)
 		length++;
@@ -24,7 +24,7 @@ static size_t	ft_intlen(int n)
 		n /= 10;
 		length++;
 	}
-	return(length);
+	return (length);
 }
 
 char	*ft_itoa(int n)

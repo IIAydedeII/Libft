@@ -6,7 +6,7 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 10:54:40 by adede             #+#    #+#             */
-/*   Updated: 2026/01/16 11:52:20 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/19 09:15:33 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static size_t	ft_count_words(const char *s, char c)
 {
 	size_t	count;
-	int	in_word;
+	int		in_word;
 
 	count = 0;
 	in_word = 0;
@@ -62,6 +62,7 @@ char	**ft_split(const char *s, char c)
 		return (NULL);
 	word_index = 0;
 	while (*s)
+	{
 		if (*s != c)
 		{
 			word_length = 0;
@@ -75,6 +76,6 @@ char	**ft_split(const char *s, char c)
 		}
 		else
 			s++;
-	split[word_index]  = NULL;
+	}
 	return (split);
 }
