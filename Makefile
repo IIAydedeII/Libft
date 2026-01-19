@@ -40,8 +40,7 @@ OBJ	= $(SRC:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@ar rc $(NAME) $(OBJ)
-	@ranlib $(NAME)
+	ar rcs $(NAME) $(OBJ)
 
 %.o: %.c
 	cc -Wall -Werror -Wextra -c $< -o $@
