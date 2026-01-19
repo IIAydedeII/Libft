@@ -6,7 +6,7 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 13:34:11 by adede             #+#    #+#             */
-/*   Updated: 2026/01/19 12:11:49 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/19 13:27:11 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,8 @@ void	ft_lstadd_front(t_list **lst, t_list *new);
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *));
+
+void	ft_lstiter(t_list *lst, void (*f)(void *));
 
 t_list	*ft_lstlast(t_list *lst);
 
