@@ -6,7 +6,7 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 13:34:11 by adede             #+#    #+#             */
-/*   Updated: 2026/01/16 10:54:12 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/19 10:16:48 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdint.h>
 
 int		ft_atoi(const char *nptr);
 
