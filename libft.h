@@ -6,7 +6,7 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 13:34:11 by adede             #+#    #+#             */
-/*   Updated: 2026/01/19 10:16:48 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/19 10:29:50 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,12 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdint.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 
 int		ft_atoi(const char *nptr);
 
@@ -34,6 +40,8 @@ int		ft_isdigit(int c);
 int		ft_isprint(int c);
 
 char	*ft_itoa(int c);
+
+t_list	*ft_lstnew(void *content);
 
 void	*ft_memchr(const void *s, int c, size_t n);
 
