@@ -52,7 +52,7 @@ make re
 ## Full Feature List
 This **libft** library includes some standard C functions and additional utilities, categorized below:
 
-### Conversion
+### Type Conversions
 - `ft_atoi` — converts a string to an integer
 - `ft_itoa` — converts an integer to a string
 
