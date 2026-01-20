@@ -6,7 +6,7 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 10:23:15 by adede             #+#    #+#             */
-/*   Updated: 2026/01/20 09:34:20 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/20 10:11:52 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new_node;
 	void	*content;
 
+	if (!f || !del)
+		return (NULL);
 	head = NULL;
 	while (lst)
 	{
@@ -26,7 +28,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		if (!new_node)
 		{
 			del(content);
-			ft_lstclear(&new_node, del);
+			ft_lstclear(&head, del);
+			return (NULL);
 		}
 		ft_lstadd_back(&head, new_node);
 		lst = lst->next;
