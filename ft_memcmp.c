@@ -6,7 +6,7 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 15:09:29 by adede             #+#    #+#             */
-/*   Updated: 2026/01/08 11:52:03 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/22 09:51:37 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	const unsigned char	*p1;
 	const unsigned char	*p2;
 
-	p1 = s1;
-	p2 = s2;
+	p1 = (const unsigned char *)s1;
+	p2 = (const unsigned char *)s2;
 	while (n--)
 	{
 		if (*p1 != *p2)

@@ -6,7 +6,7 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 09:30:59 by adede             #+#    #+#             */
-/*   Updated: 2026/01/07 16:34:50 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/22 09:46:52 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	char	*dest_casted;
-	char	*src_casted;
+	unsigned char	*dest_casted;
+	unsigned char	*src_casted;
 	size_t	c;
 
-	dest_casted = (char *)dest;
-	src_casted = (char *)src;
+	dest_casted = (unsigned char *)dest;
+	src_casted = (unsigned char *)src;
 	if (dest_casted == src_casted)
 		return (NULL);
 	else if (dest_casted > src_casted)
@@ -30,8 +30,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	else
 	{
 		c = 0;
-		while (c++ < n)
-			dest_casted[c - 1] = src_casted[c - 1];
+		while (c < n)
+			dest_casted[c] = src_casted[c];
 	}
 	return (dest);
 }
