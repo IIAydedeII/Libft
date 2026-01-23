@@ -6,7 +6,7 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 15:09:29 by adede             #+#    #+#             */
-/*   Updated: 2026/01/13 09:15:07 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/23 15:49:23 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strrchr(const char *s, int c)
 	last_occurrence = NULL;
 	while (*s)
 	{
-		if (*s == c)
+		if ((unsigned char)*s == (unsigned char)c)
 			last_occurrence = (char *)s;
 		s++;
 	}
