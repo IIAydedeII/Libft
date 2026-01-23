@@ -6,7 +6,7 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 15:09:29 by adede             #+#    #+#             */
-/*   Updated: 2026/01/13 10:37:49 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/23 15:57:28 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	c2;
 
 	c = 0;
+	if (ft_strlen(little) == 0)
+		return ((char *)big);
 	while (big[c] && len > 0)
 	{
 		c2 = 0;
