@@ -6,11 +6,9 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 14:18:34 by adede             #+#    #+#             */
-/*   Updated: 2026/01/13 09:17:32 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/23 12:53:46 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_toupper(int c)
 {

@@ -6,11 +6,9 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 10:54:40 by adede             #+#    #+#             */
-/*   Updated: 2026/01/19 08:56:03 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/23 12:50:12 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
