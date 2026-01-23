@@ -6,7 +6,7 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 15:09:29 by adede             #+#    #+#             */
-/*   Updated: 2026/01/14 11:03:34 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/23 13:14:07 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strdup(const char *s)
 	size_t	buff_len;
 
 	buff_len = ft_strlen(s) + 1;
-	dup = malloc(buff_len);
+	dup = ft_calloc(buff_len, sizeof(char));
 	if (!dup)
 		return (NULL);
 	ft_memcpy(dup, s, buff_len);
