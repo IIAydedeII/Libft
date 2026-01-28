@@ -6,11 +6,12 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 14:18:34 by adede             #+#    #+#             */
-/*   Updated: 2026/01/28 09:27:56 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/28 09:59:36 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdint.h>
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {

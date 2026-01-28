@@ -6,7 +6,7 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 13:34:11 by adede             #+#    #+#             */
-/*   Updated: 2026/01/20 12:51:56 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/28 10:11:10 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 # include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
-# include <stdint.h>
 
 typedef struct s_list
 {
