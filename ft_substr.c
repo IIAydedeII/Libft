@@ -6,7 +6,7 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 15:09:29 by adede             #+#    #+#             */
-/*   Updated: 2026/01/27 11:02:34 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/28 09:42:35 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,22 +15,18 @@
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
 	char	*substr;
-	size_t	i;
+	size_t	slen;
 
 	if (!s)
 		return (NULL);
-	if (start >= ft_strlen(s))
+	slen = ft_strlen(s);
+	if (start >= slen)
 		len = 0;
-	if (len > ft_strlen(s + start))
-		len = ft_strlen(s + start);
+	if (len > slen - start)
+		len = slen - start;
 	substr = ft_calloc(len + 1, sizeof(char));
 	if (!substr)
 		return (NULL);
-	i = 0;
-	while (i < len)
-	{
-		substr[i] = s[start + i];
-		i++;
-	}
+	ft_memcpy(substr, s + start, len);
 	return (substr);
 }
