@@ -6,7 +6,7 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 10:54:40 by adede             #+#    #+#             */
-/*   Updated: 2026/01/23 12:37:40 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/27 11:05:01 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strtrim(const char *s1, const char *set)
 	size_t	index_end;
 	size_t	length;
 
+	if (!s1 || !set)
+		return (NULL);
 	index_start = 0;
 	while (s1[index_start] && ft_strchr(set, s1[index_start]))
 		index_start++;

@@ -6,7 +6,7 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 10:54:40 by adede             #+#    #+#             */
-/*   Updated: 2026/01/23 13:03:16 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/27 11:24:09 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,16 @@ static size_t	ft_count_words(const char *s, char c)
 	return (count);
 }
 
+static size_t	measure_word(const char *s, char c)
+{
+	size_t	length;
+
+	length = 0;
+	while (s[length] && s[length] != c)
+		(length)++;
+	return (length);
+}
+
 static void	ft_free_split(char **split, size_t i)
 {
 	while (i > 0)
@@ -46,6 +56,8 @@ char	**ft_split(const char *s, char c)
 	size_t	word_length;
 	size_t	word_index;
 
+	if (!s)
+		return (NULL);
 	split = ft_calloc(ft_count_words(s, c) + 1, sizeof(char *));
 	if (!split)
 		return (NULL);
@@ -54,9 +66,7 @@ char	**ft_split(const char *s, char c)
 	{
 		if (*s != c)
 		{
-			word_length = 0;
-			while (s[word_length] != c && s[word_length])
-				word_length++;
+			word_length = measure_word(s, c);
 			split[word_index] = ft_substr(s, 0, word_length);
 			if (!split[word_index])
 				return (ft_free_split(split, word_index), NULL);

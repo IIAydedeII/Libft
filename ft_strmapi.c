@@ -6,7 +6,7 @@
 /*   By: adede <adede@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 10:54:40 by adede             #+#    #+#             */
-/*   Updated: 2026/01/19 08:55:51 by adede            ###   ########.fr       */
+/*   Updated: 2026/01/28 09:00:16 by adede            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 	size_t	length;
 	size_t	i;
 
+	if (!s || !f)
+		return (NULL);
 	length = ft_strlen(s);
 	map = ft_calloc(length + 1, sizeof(char));
 	if (!map)
